@@ -1,0 +1,299 @@
+\documentclass{article}
+\usepackage{amsfonts} 
+\usepackage[english]{babel}
+\newtheorem{axiom}{Axiom}[section]
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{definition}{Definition}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+\begin{document}
+\section{A Set of Axioms for the Real-Number System}
+
+\subsection{The field axioms}
+
+\begin{axiom}[Commutative laws]
+\(x+y=y+x, \quad x y=y x .\)
+\end{axiom}
+
+\begin{axiom}[Associative laws]
+\(x+(y+z)=(x+y)+z, \quad x(y z)=(x y) z .\)
+\end{axiom}
+
+\begin{axiom}[Distributive law]
+\(x(y + z) = xy + xz.\)
+\end{axiom}
+
+\begin{axiom}[Existence of identity elements]
+There exist two distinct real numbers, which we denote by 0 and 1, such that for every real \(x\) we have \(x + 0 = x\) and \(1 \cdot x = x\).
+\end{axiom}
+
+\begin{axiom}[Existence of identity elements]
+For every real number \(x\) there is a real number \(y\) such that \(x + y = 0\).
+\end{axiom}
+
+\begin{axiom}[Existence of reciprocals]
+For every real number \(x \neq 0\) there is a real number \(y\) such that \(xy = 1\).
+\end{axiom}
+
+\begin{theorem}[Cancellation law for addition]
+if \(a + b = a + c\), then \(b = c\) (In particular, this shows that the number 0 of Axiom 1.4 is unique.)
+\end{theorem}
+
+\begin{theorem}[Possibility of subtraction]
+Given \(a\) and \(b\), there is exactly one x such that \(a + x = b\). This \(x\) is denoted by \(b - a\). In particular, \(0 - a\) is written simply \(-a\) and is called the negative \(a\).
+\end{theorem}
+
+\begin{theorem}
+\(b - a = b + (-a).\)
+\end{theorem}
+
+\begin{theorem}
+\(-(-a) = a.\)
+\end{theorem}
+
+\begin{theorem}
+\(a(b - c) = ab - ac.\)
+\end{theorem}
+
+\begin{theorem}
+\(0 \cdot a = a \cdot 0 = 0\)
+\end{theorem}
+
+\begin{theorem}[Cancellation law for multiplication]
+if \(ab = ac\) and \(a \neq 0\). then \(b = c\). (In particular, this shows that the number 1 of Axiom 1.4 is unique.)
+\end{theorem}
+
+\begin{theorem}[Possibility of division]
+Given  \(a\) and \(b\) with \(a \neq 0\), there is exactly one \(x\) such that \(ax = b\). This \(x\) is denoted by \(b/a\) or \(\frac{b}{a}\) and is called the quotient of \(b\) and \(a\). In particular, \(1/a\) is also written \(a^{-1}\) and is called the reciprocal of \(a\).
+\end{theorem}
+
+\begin{theorem}
+If \(a \neq 0\), then \(b/a = b \cdot a^{-1}\).
+\end{theorem}
+
+\begin{theorem}
+If \(a \neq 0\), then \((a^{-1})^{-1}\) = a.
+\end{theorem}
+
+\begin{theorem}
+If \(ab = 0\), then \(a = 0\) of \(b = 0\).
+\end{theorem}
+
+\begin{theorem}
+\((-a)b = -(ab)\) and \((-a)(-b) = ab\).
+\end{theorem}
+
+\begin{theorem}
+\((a/b) + (c/d) = (ad + bc)/(bd)\) if \(b \neq 0\) and \(d \neq 0\).
+\end{theorem}
+
+\begin{theorem}
+\((a/b)(c/d) = (ac)/(bd)\) if \(b \neq 0\) and \(d \neq 0\).
+\end{theorem}
+
+\begin{theorem}
+\((a/b)/(c/d) = (ad)/(bc)\) if \(b \neq 0\), \(c \neq 0\) and \(d \neq 0\).
+\end{theorem}
+
+\subsection{The order axioms}
+
+\begin{axiom}
+If \(x\) and \(y\) are in \(\mathbb{R}^{+}\), so are \(x + y\) and \(xy\). 
+\end{axiom}
+
+\begin{axiom}
+For every real \(x \neq0\), either \(x \in \mathbb{R}^{+}\) or \(-x \in \mathbb{R}^{+}\), but not both.
+\end{axiom}
+
+\begin{axiom}
+\(0 \notin \mathbb{R}^{+}\).
+\end{axiom}
+
+Now we can define the symbols $<$, $>$, $\leq$, and $\geq$, called, respectively, \emph{less than}, \emph{greater than}, \emph{less than or equal to}, and \emph{greater than or equal to}, as follows:
+
+
+\begin{itemize}
+\item \(x < y\) means that \(y - x\) is positive;
+
+\item \(x > y\) means that \(x < y\);
+
+\item \(x \leq y\) means that either \(x < y\) or \(x = y\);
+
+\item \(y \geq x\) means that \(x \leq y\).
+\end{itemize}
+
+\begin{theorem}[Trichotomy law]
+For arbitrary real numbers \(a\) and \(b\), exactly one of the three relations \(a < b\), \(b < a\), \(a = b\) holds.
+\end{theorem}
+
+\begin{theorem}[Transitive law]
+If \(a < b\) and \(b < c\), then \(a < c\).
+\end{theorem}
+
+\begin{theorem}
+If \(a < b\), then \(a + c < b + c\).
+\end{theorem}
+
+\begin{theorem}
+If \(a < b\) and \(c > 0\), then \(ac < bc\).
+\end{theorem}
+
+\begin{theorem}
+If \(a \neq 0\), then \(a^2 > 0\).
+\end{theorem}
+
+\begin{theorem}
+\(1 > 0\).
+\end{theorem}
+
+\begin{theorem}
+If \(a < b\) and \(c < 0\), then \(ac > bc\).
+\end{theorem}
+
+\begin{theorem}
+If \(a < b\), then \(-a > -b\). In particular, if \(a < 0\), then \(-a > 0\).
+\end{theorem}
+
+\begin{theorem}
+If \(ab > 0\), then both \(a\) and \(b\) are positive or both are negative.
+\end{theorem}
+
+\begin{theorem}
+If \(a < c\) and \(b < d\), then \(a + b < c + d\).
+\end{theorem}
+
+\subsection{Integers and rational numbers}
+
+\begin{definition}[Inductive set]
+A set of real numbers is called an inductive set if it has the following two properties: \\
+(a) the number 1 is in the set. \\
+(b) For every \(x\) in the set, the number \(x + 1\) is also in the set.
+\end{definition}
+
+\begin{definition}[Positive integers]
+A real number is called a positive integer if it belongs to every inductive set.
+\end{definition}
+
+\subsection{Upper bound of a set, maximum element, least upper bound (supremum)}
+
+\begin{definition}[Least upper bound]
+A number \(B\) is called a least upper bound of a nonempty set \(S\) if \(B\) has the following two properties: \\
+(a) \(B\) is an upper bound for \(S\). \\
+(b) No number less than \(B\) is an upper bound for \(S\).
+\end{definition}
+
+\begin{theorem}
+Two different numbers cannot be least upper bounds for the same set.
+\end{theorem}
+
+\subsection{The least-upper-bound axiom (completeness axiom)}
+
+\begin{axiom}
+Every nonempty set \(S\) of real numbers which is bounded above has a supremum; that is, there is a real number \(B\) such that \(B = \sup S\).
+\end{axiom}
+
+\begin{theorem}
+Every nonempty set \(S\) that is bounded below has a greatest lower bound; that is, there is a real number \(L\) such that \(S = \inf S\).
+\end{theorem}
+
+\subsection{The Archimedean property of the real-number system}
+
+\begin{theorem}
+The set \(\mathbb{P}\) of positive integers \(1, 2, 3, ...\) is unbounded above.
+\end{theorem}
+
+\begin{theorem}
+For every real \(x\) there exists a positive integer \(n\) such that \(n > x\).
+\end{theorem}
+
+\begin{theorem}
+If \(x > 0\) and if \(y\) is an arbitrary real number, there exists a positive integer \(n\) such that \(nx > y\).
+\end{theorem}
+
+\begin{theorem}
+If three real numbers \(a\), \(x\), and \(y\) satisfy the inequalities
+\[
+a \leq x \leq a + \frac{y}{n}
+\]
+for every integer \(n \geq 1\), then \(x = a\).
+\end{theorem}
+
+\subsubsection{Fundamental properties of the supremum and infimum}
+
+\begin{theorem}
+Let \(h\) be given positive number and let \(S\) be a set of real numbers. \\
+(a) If \(S\) has a supremum, then for some \(x\) in \(S\) we have
+\[
+x > \sup S - h.
+\]
+(b) If \(S\) has an infimum, then for some \(x\) in \(S\) we have
+\[
+x < \inf S + h.
+\]
+\end{theorem}
+
+\begin{theorem}[Additive property]
+Given nonempty subsets \(A\) and \(B\) of \(\mathbb{R}\), let \(C\) denote the set
+\[
+C = \{a + b \;|\; a \in A,\; b \in B\}.
+\]
+(a) if each of \(A\) and \(B\) has a supremum, then \(C\) has a supremum, and
+\[
+\sup C = \sup A + \sup B.
+\]
+(b) if each of \(A\) and \(B\) has an infimum, then \(C\) has an infimum, and
+\[
+\inf C = \inf A + \inf B.
+\]
+\end{theorem}
+
+\begin{theorem}
+Given two nonempty subsets \(S\) and \(T\) of \(\mathbb{R}\) such that
+\[
+s \leq t
+\]
+for every \(s\) in \(S\) and every \(t\) in \(T\). Then \(S\) has a supremum, and \(T\) has an infimum, and they satisfy the inequality
+\[
+\sup S \leq \inf T
+\]
+\end{theorem}
+
+\subsection{Existence of square roots of nonnegative real numbers}
+
+\begin{theorem}
+    Every nonnegative real number \(a\) has a unique nonnegative square root.
+\end{theorem}
+
+Note: if \(a \geq 0\), we denote its nonnegative square root by \(a^{1/2}\) or by \(\sqrt{a}\). if \(a > 0\). the negative square root is \(-a^{1/2}\) or \(-\sqrt{a}\).
+
+\section{Mathematical Induction, Summation Notation, and Related Topics}
+
+\subsection{The principle of mathematical induction}
+
+\emph{Method of proof by induction}. Let \(A(n)\) be an assertion involving an integer \(n\). We conclude that \(A(n)\) is true for every \(n \geq n_{1}\) if we can perform the following two steps:
+
+(a) Prove that \(A(n_{1})\) is true.
+
+(b) Let \(k\) be an arbitrary but fixed integer \(\geq n_{1}\). Assume that \(A(k)\) is true and prove that \(A(k + 1)\) is also true.
+
+In actual practice \(n_{1}\) is usually \(1\). The logical justification for this method of proof is the following theorem about real numbers.
+
+\begin{theorem}[Principle of mathematical induction]
+    Let \(S\) be a set of positive integers which has the following two properties:
+
+    (a) The number \(1\) is in the set \(S\).
+
+    (b) If an integer \(k\) is in \(S\), then so is \(k + 1\).
+
+    Then every positive integer is in the set \(S\).
+\end{theorem}
+
+\subsection{The well-ordering principle}
+
+\begin{theorem}[Well-ordering principle]
+    Every nonempty set of positive integers contains a smallest member.
+\end{theorem}
+
+\end{document}
